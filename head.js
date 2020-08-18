@@ -6,8 +6,12 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual("Lighthouse Labs", "Lighthouse Labs");
-assertEqual(2, 4);
+const head = function(arr) {
+  return arr[0];
+};
+
+//TEST CASES
+assertEqual(head([5, 6, 7]), 5); //5 === 5
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello"); //"Hello" === "Hello"
+assertEqual(head([1]), 3); //1 !== 3
+assertEqual(head([])); //undefined
