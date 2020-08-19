@@ -21,5 +21,5 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-assertArraysEqual(["hey", "hi", "hello"], ["hey", "hi", "hello"]);
-assertArraysEqual(["hey", "hi", "bye"], ["hey", "hi", "hello"]);
+assertArraysEqual(["hey", "hi", "hello"], ["hey", "hi", "hello"]); //should PASS
+assertArraysEqual(["hey", "hi", "bye"], ["hey", "hi", "hello"]); //should FAIL
