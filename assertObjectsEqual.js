@@ -1,3 +1,18 @@
+const eqArrays = function(arr1, arr2) {
+  let result = true;
+
+  if (arr1.length !== arr2.length) {
+    result = false;
+  }
+
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) {
+      result = false;
+    }
+  }
+  return result;
+};
+
 const eqObjects = function(object1, object2) {
   let obj1Length = Object.keys(object1).length;
   let obj2Length = Object.keys(object2).length;
