@@ -41,9 +41,9 @@ const assertObjectsEqual = function(actual, expected) {
   const inspect = require("util").inspect;
 
   if (eqObjects(actual, expected)) {
-    console.log((`${String.fromCodePoint(0x2705)} Assertion Passed: ${inspect(arguments[0])} === ${inspect(arguments[1])}`));
+    console.log((`${'✅✅✅'} Assertion Passed: ${inspect(arguments[0])} === ${inspect(arguments[1])}`));
   } else {
-    console.log(`${String.fromCodePoint(0x274C)} Assertion failed: ${inspect(arguments[0])} !== ${inspect(arguments[1])}`);
+    console.log(`${'❌❌❌'} Assertion failed: ${inspect(arguments[0])} !== ${inspect(arguments[1])}`);
   }
 };
 
