@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@kproulx/lotide",
+  "version": "1.0.1",
+  "description": "A simple clone of the Lodash library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/kelsi2/lotide.git"
   },
-  "author": "",
+  "author": "Kelsi Proulx <kelsiproulx1919@gmail.com> (https://kelsidev.net)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kelsi2/lotide/issues"
