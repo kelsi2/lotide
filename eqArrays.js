@@ -1,5 +1,3 @@
-const assertEqual = require("./assertEqual");
-
 const eqArrays = function(arr1, arr2) {
   let result = true;
 
