@@ -1,21 +1,15 @@
 const countLetters = require("../countLetters");
-const assertEqual = require("../assertEqual");
+const assert = require("chai").assert;
 
-const string = "Lighthouse FTW!";
-const answer = countLetters(string);
+describe("#countLetters", () => {
+  it("should count the letters in a string", () => {
+    const actual = "Lighthouse";
+    const expected = {e: 1, g: 1, h: 2, i: 1, L: 1, o: 1, s: 1, t: 1, u: 1};
 
-// ------------TEST CASE-------------
-console.log(countLetters(string));
+    assert.deepEqual(countLetters(actual), expected);
+  });
 
-assertEqual(answer['e'], 1);
-assertEqual(answer['F'], 1);
-assertEqual(answer['g'], 1);
-assertEqual(answer['h'], 2);
-assertEqual(answer['i'], 1);
-assertEqual(answer['L'], 1);
-assertEqual(answer['o'], 1);
-assertEqual(answer['s'], 1);
-assertEqual(answer['t'], 1);
-assertEqual(answer['T'], 1);
-assertEqual(answer['u'], 1);
-assertEqual(answer['W'], 1);
+  it("should return an empty object if no input given", () => {
+    assert.deepEqual(countLetters(""), {});
+  });
+});
